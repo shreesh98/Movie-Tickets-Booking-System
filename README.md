@@ -55,7 +55,8 @@ A flask based REST interface for a movie theatre ticket booking system.
     "id" : "9" 
 }
 ```
-
+### More than 20 pepople are not allowed at the same time
+![](images/More%20than%2020%20people%20are%20not%20allowed%20at%20the%20same%20time.png)
 
 ## Databse used
 MYSQL
