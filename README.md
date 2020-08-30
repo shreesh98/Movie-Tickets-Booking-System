@@ -18,7 +18,7 @@ A flask based REST interface for a movie theatre ticket booking system.
     "timings" : "31/08/2020 02:00:00" 
 }
 ```  
-
+![](images/booking.png)
 
 2. **'/update'** - An endpoint to update a ticket timing.  
 **input** - in JSON format  
@@ -28,7 +28,7 @@ A flask based REST interface for a movie theatre ticket booking system.
     "newtime" : "31/08/2020 02:30:00" 
 }
 ```  
-
+![](images/update.png)
 
 3. **'/viewAccToTime'** - An endpoint to view all the tickets for a particular time.  
 **input** - in JSON format
@@ -37,6 +37,7 @@ A flask based REST interface for a movie theatre ticket booking system.
     "timing" : "31/08/2020 02:30:00" 
 }
 ```
+![](images/View%20for%20a%20part.%20time.png)
 
 4. **'/delete'** - An endpoint to delete a particular ticket.  
 **input** - in JSON format
@@ -46,7 +47,7 @@ A flask based REST interface for a movie theatre ticket booking system.
     "timing" : "31/08/2020 05:00:00" 
 }
 ```  
-  
+![](images/deletion.png)
 
 5. **'/viewAccToId'** - An endpoint to view the user’s details based on the ticket id.  
 **input** - in JSON format
@@ -55,6 +56,12 @@ A flask based REST interface for a movie theatre ticket booking system.
     "id" : "9" 
 }
 ```
+![](images/view%20acc.%20to%20id.png)
+### Ticket expires if diff. between booking time and current time is 8 hours and record is deleted
+* ticket timing initially set for diff. of less than 8 hours
+![](images/new%20entry%20time%20diff%20less%20than%208.png)
+* updated, diff. is more than 8, therefore ticket expired
+![](images/updated%20time%20diff%20more%20than%208--expired.png)
 ### More than 20 pepople are not allowed at the same time
 ![](images/More%20than%2020%20people%20are%20not%20allowed%20at%20the%20same%20time.png)
 
